@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f8c622</color>
+    <color name="colorPrimaryDark">#f8c622</color>
+    <color name="colorAccent">#f8c622</color>
+
+
+    <color name="colorBottomTitle">#eebf2a</color>
+    <color name="colorGrey">#c5c5c5</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorText">#bfc2cc</color>
+    <color name="colorText2">#959cfc</color>
+    <color name="colorBackground">#f5f7fa</color>
+    <color name="colorAddCardTitle">#303133</color>
+</resources>

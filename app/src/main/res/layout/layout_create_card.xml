@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="340dp"
+                android:layout_height="37dp"
+                android:background="@drawable/add_card_top"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/card_front_top"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正面"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_pic2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pic"
+                    android:layout_marginEnd="10dp"/>
+
+
+                <ImageView
+                    android:id="@+id/img_listen2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignEnd="@+id/img_pic2"
+                    android:src="@mipmap/listen"
+                    android:layout_marginEnd="60dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignEnd="@+id/img_listen2"
+                    android:src="@mipmap/font"
+                    android:layout_marginEnd="60dp"/>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="start"
+                android:hint="请输入该卡片的正面内容"
+                android:textSize="14sp"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/card1"
+        app:cardCornerRadius="20dp"
+        android:elevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="340dp"
+                android:layout_height="37dp"
+                android:background="@drawable/add_card_top"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/card_front_top"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="反面"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pic"
+                    android:layout_marginEnd="10dp"/>
+
+
+                <ImageView
+                    android:id="@+id/img_listen"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignEnd="@+id/img_pic"
+                    android:src="@mipmap/listen"
+                    android:layout_marginEnd="60dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignEnd="@+id/img_listen"
+                    android:src="@mipmap/font"
+                    android:layout_marginEnd="60dp"/>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="start"
+                android:hint="请输入该卡片的反面内容"
+                android:textSize="14sp"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

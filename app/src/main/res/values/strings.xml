@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MemoryEasy</string>
+    <string name="study_item">学习</string>
+    <string name="add_item">添加</string>
+    <string name="study_match">配对</string>
+    <string name="study_sort">排序</string>
+    <string name="study_write">书写</string>
+    <string name="study_more">更多</string>
+    <string name="home_tv_today">今天有</string>
+    <string name="home_tv_cardRes">卡片库</string>
+    <string name="home_tv_all">总共有</string>
+    <string name="home_tv_amount">55张</string>
+    <string name="home_tv_wait">卡片待学习</string>
+    <string name="tv_studied">已学</string>
+    <string name="tv_day_amount">35</string>
+    <string name="tv_day">天</string>
+    <string name="start_study">开始学习</string>
+    <string name="title_study">学习</string>
+    <string name="title_recommend">推荐卡片库</string>
+    <string name="img_reset">TODO</string>
+    <string name="title_wait">待学习</string>
+    <string name="img_see_more">TODO</string>
+    <string name="user_name">Barry</string>
+    <string name="add_finish">完成</string>
+    <string name="add_card_title">创建新的卡片</string>
+    <string name="add_card_choose_resp">请选择所属卡片库</string>
+    <string name="add_card_2_dir">添加卡片内容</string>
+    <string name="login">登陆</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="reg_mobile_hint">请输入手机号</string>
+    <string name="reg_sign">请输入用户个性签名</string>
+</resources>

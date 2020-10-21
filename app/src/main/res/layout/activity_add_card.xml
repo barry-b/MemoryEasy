@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/back" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bk_btn_finish"
+            android:textColor="@color/colorWhite"
+            android:elevation="5dp"
+            android:text="@string/add_finish" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_card_title"
+        android:textColor="@color/colorAddCardTitle"
+        android:layout_below="@+id/top_tab"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_group"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/create_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/add_card_choose_resp"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/more_add" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_card_2_dir"
+        android:layout_below="@+id/choose_group"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_title"
+        android:orientation="vertical">
+
+        <com.example.memoryeasy.view.CusViewPager
+            android:id="@+id/vp_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="180dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="下一张"
+            android:background="@drawable/round_btn"
+            android:elevation="5dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
